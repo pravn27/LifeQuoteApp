@@ -1,0 +1,3 @@
+rootProject.name = 'LifeQuoteApp'
+
+include ':app'
