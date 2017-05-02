@@ -1,4 +1,4 @@
-# LifeQuoteApp
+# Basic LifeQuoteApp 
 #Projects on Native Apps for IOS and Android
 Follow the steps to install App in device
   1. Clone repository
