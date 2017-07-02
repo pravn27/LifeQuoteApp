@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   },
   quoteText: {
     fontFamily: 'Roboto',
-    fontSize: 36,
+    fontSize: 30,
     color: 'black',
     marginVertical: 30
   },

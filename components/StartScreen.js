@@ -15,7 +15,7 @@ export default class StartScreen extends Component {
       <View style={styles.container}>
         <TouchableOpacity style={styles.button} onPress={this.props.onStartHandler}>
           <Image style={styles.buttonImage} source={ZenImg}/>
-          <Text style={styles.readyText}>I'm ready to relax..</Text>
+          <Text style={styles.readyText}>Ready to relax..</Text>
         </TouchableOpacity>
       </View>
     );
