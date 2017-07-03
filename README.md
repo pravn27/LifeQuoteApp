@@ -6,3 +6,4 @@ Follow the steps to install App in device
   3. Replace index.android.js file with my file from git
   4. we can use android emulator as well as physical device to deploy run
   5. Run 'react-native start' and 'react-native run-android'
+  ![Image of Yaktocat](https://media.giphy.com/media/xUA7b3ZMmfUl62wZCU/giphy.gif)
