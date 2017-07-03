@@ -21,7 +21,14 @@ const styles = StyleSheet.create({
   quoteContainer: {
     flex: 1,
     justifyContent: 'center',
-    padding: 10
+    padding: 10,
+    borderWidth: 3,
+    borderRadius: 3,
+    borderColor: 'dimgrey',
+    marginTop: '4%',
+    marginBottom: '4%',
+    marginLeft: 5,
+    marginRight: 5,
   },
   quoteText: {
     fontFamily: 'Roboto',

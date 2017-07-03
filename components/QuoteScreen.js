@@ -25,7 +25,7 @@ export default class QuoteScreen extends Component {
       <Image source={bgImg} style={styles.image}>
        <View style={styles.container}>
         <Quote key={this.props.qId} quoteText={this.props.text} quoteSource={this.props.source}/>
-        <NextQuoteButton onPress={this.props.onNextQuotePress}/>
+        <NextQuoteButton nextPress={this.props.onNextQuotePress} backPress={this.props.onBackQuotePress} />
        </View>
       </Image>
     );
@@ -36,6 +36,7 @@ QuoteScreen.PropTypes = {
   text: PropTypes.string.isRequired,
   source: PropTypes.string.isRequired,
   onNextQuotePress: PropTypes.func.isRequired,
+  onBackQuotePress: PropTypes.func.isRequired,
   qId: PropTypes.number.isRequired
 }
 
@@ -61,8 +62,6 @@ const tranquil = {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
   },
   image: {
     flex: 1,

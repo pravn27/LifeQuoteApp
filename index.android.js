@@ -16,6 +16,7 @@ export default class LifeQuoteApp extends Component {
       quoteIndex: 0
     }
     this.indexIncrement = this.indexIncrement.bind(this);
+    this.indexDecrement = this.indexDecrement.bind(this);
   }
 
   indexIncrement(){
@@ -24,6 +25,16 @@ export default class LifeQuoteApp extends Component {
       newIndex = 0;
     } else {
       newIndex = this.state.quoteIndex + 1;
+    }
+    this.setState({ quoteIndex: newIndex })
+  }
+
+  indexDecrement(){
+    let newIndex;
+    if(this.state.quoteIndex == 0){
+      newIndex = quotes.length - 1;
+    } else {
+      newIndex = this.state.quoteIndex - 1;
     }
     this.setState({ quoteIndex: newIndex })
   }
@@ -38,7 +49,8 @@ export default class LifeQuoteApp extends Component {
           case 'StartScreen':
            return <StartScreen onStartHandler={ () => navigator.push({ name:'QuoteScreen' }) }/>
           case 'QuoteScreen':
-           return <QuoteScreen qId={this.state.quoteIndex} text={quote.quoteText} source={quote.quoteSource} onNextQuotePress={this.indexIncrement}/>
+           return <QuoteScreen qId={this.state.quoteIndex} text={quote.quoteText} 
+           source={quote.quoteSource} onNextQuotePress={this.indexIncrement} onBackQuotePress={this.indexDecrement}/>
         }
        }}
       />
